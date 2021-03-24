@@ -1,0 +1,1377 @@
+Exception 'yii\db\Exception' with message 'PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: SELECT * FROM `message` WHERE `status`=5 ORDER BY `id`'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Schema.php:664
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT * FROM `...')
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#6 [internal function]: console\controllers\NotificationController->actionPrepare()
+#7 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#15 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Connection timed out'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Connection timed out'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Connection timed out'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: SELECT * FROM `message` WHERE `status`=5 ORDER BY `id`'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Schema.php:664
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT * FROM `...')
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#6 [internal function]: console\controllers\NotificationController->actionPrepare()
+#7 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#15 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No route to host'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#6 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\NotificationController->actionPrepare()
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#14 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#15 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#17 {main}
+Exception 'yii\db\Exception' with message 'PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: SELECT * FROM `message` WHERE `status`=5 ORDER BY `id`'
+
+in /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Schema.php:664
+
+Stack trace:
+#0 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT * FROM `...')
+#1 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /home/avada/myhouse24.pro/www/console/controllers/NotificationController.php(33): yii\db\ActiveQuery->all()
+#6 [internal function]: console\controllers\NotificationController->actionPrepare()
+#7 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('prepare', Array)
+#10 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('prepare', Array)
+#11 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('notification/pr...', Array)
+#12 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('notification/pr...', Array)
+#13 /home/avada/myhouse24.pro/www/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /home/avada/myhouse24.pro/www/yii(31): yii\base\Application->run()
+#15 {main}
