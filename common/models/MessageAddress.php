@@ -58,8 +58,8 @@ class MessageAddress extends \common\models\ZModel
             'riser_id' => Yii::t('model', 'Стояк'),
             'floor_id' => Yii::t('model', 'Этаж'),
             'flat_id' => Yii::t('model', 'Квартира'),
-            'user_id' => Yii::t('model', 'Владелец квартир'),
-            'user_has_debt' => Yii::t('model', 'Владельцам с задолженностями'),
+            'user_id' => Yii::t('model', 'Арендатор'),
+            'user_has_debt' => Yii::t('model', 'Арендаторам с задолженностями'),
         ];
     }
 

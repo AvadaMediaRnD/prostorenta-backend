@@ -160,7 +160,7 @@ $userMasterOptions = UserAdmin::getUserMasterOptions();
                         'pluginOptions' => [
                             'allowClear' => true
                         ],
-                    ]) ?>
+                    ])->label('Помещение') ?>
                     
                     <?= $form->field($model, 'type')->dropDownList(
                         MasterRequest::getTypeOptions()
