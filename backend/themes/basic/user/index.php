@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 Выберите действие <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="<?= Yii::$app->urlManager->createUrl(['/user/create']) ?>">Добавить владельца квартиры</a></li>
+                <li><a href="<?= Yii::$app->urlManager->createUrl(['/user/create']) ?>">Добавить арендатора</a></li>
                 <li><a href="<?= Yii::$app->urlManager->createUrl([
                     '/message/create',
                     'MessageAddress[user_has_debt]' => 1,
@@ -235,7 +235,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ]); ?>
             
             <div class="box-footer">
-                <div>Количество владельцев: <span class="text-bold"><?= User::find()->count() ?></span></div>
+                <div>Количество арендаторов: <span class="text-bold"><?= User::find()->count() ?></span></div>
             </div>
             
         </div>

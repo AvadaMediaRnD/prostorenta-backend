@@ -23,13 +23,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 Выберите действие <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="<?= Yii::$app->urlManager->createUrl(['/house/create']) ?>">Добавить дом</a></li>
+                <li><a href="<?= Yii::$app->urlManager->createUrl(['/house/create']) ?>">Добавить объект</a></li>
             </ul>
         </div>
         */ ?>
         
         <div class="pull-right margin-bottom">
-            <a class="btn btn-success" href="<?= Yii::$app->urlManager->createUrl(['/house/create']) ?>">Добавить дом</a>
+            <a class="btn btn-success" href="<?= Yii::$app->urlManager->createUrl(['/house/create']) ?>">Добавить объект</a>
         </div>
     </div>
 </div>
@@ -97,7 +97,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ]); ?>
             
             <div class="box-footer">
-                <div>Количество домов: <span class="text-bold"><?= House::find()->count() ?></span></div>
+                <div>Количество объектов: <span class="text-bold"><?= House::find()->count() ?></span></div>
             </div>
             
         </div>
